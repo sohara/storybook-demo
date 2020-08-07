@@ -8,6 +8,7 @@
     "react-scripts": "3.4.1"
   },
   "devDependencies": {
+    "@percy/storybook": "^3.3.0",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
@@ -16,6 +17,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   }
 }
