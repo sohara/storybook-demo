@@ -5,6 +5,6 @@ jobs:
       - image: cimg/node:current
     steps:
       - checkout
-      - install-packages:
-          steps:
-            -run: yarn run install
+      - run:
+          name: install
+          command: yarn install
