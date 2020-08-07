@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest-browsers
+    steps:
+      - checkout
+      - run:
+          name: install
+          command: yarn install
+      - run:
+          name: snapshot
+          command: yarn run snapshot
